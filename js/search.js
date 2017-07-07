@@ -1,4 +1,4 @@
-var source = "https://cdn.rawgit.com/argos-scripts/index/4a6925dd/index"
+var source = "https://rawgit.com/argos-scripts/index/master/index"
 
 var plugins = []
 var options = {
