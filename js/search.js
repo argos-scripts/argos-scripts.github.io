@@ -1,4 +1,4 @@
-var source = "https://raw.githubusercontent.com/fisherman/index/master/index"
+var source = "https://raw.githubusercontent.com/argos-scripts/index/master/index"
 
 var plugins = []
 var options = {
