@@ -270,6 +270,7 @@ footer .anchor-fix {
 
 input#search {
     color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
 }
 
 #search {
@@ -366,3 +367,4 @@ pre {
     background-color: #303030;
     border: none;
 }
+

@@ -119,7 +119,7 @@ $.get(source, function(data) {
         "url": dat[1],
         "desc": dat[2],
         "tagstring": dat[3],
-        "tags": dat[3].trim().split(" "),
+        "tags": dat[3].trim("").split(" "),
         "author": dat[4]
       })
     }
