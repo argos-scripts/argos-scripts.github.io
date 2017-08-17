@@ -17,13 +17,14 @@ section{
 }
 
 a:hover{
-    color: #fff;
+    color: #9696f2;
     text-decoration: none;
     opacity: 0.75;
 }
 
 a{
   transition:all 0.1s linear 0s;-webkit-transition:all 0.1s linear 0s;
+  color: #9696f2;
 }
 
 h2 a {
@@ -368,3 +369,7 @@ pre {
     border: none;
 }
 
+.navbar-default .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a {
+    border-right: none!important;
+    border-left: none!important;
+}

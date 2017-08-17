@@ -13,49 +13,52 @@
             <div class="collapse navbar-collapse" id="headernav">
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="https://github.com/p-e-w/argos#argos"><strong>Get Started</strong></a></li>
-                    <li><a href="https://github.com/p-e-w/argos#installation">Install</a></li>
+                    <li>
+                        <a href="https://extensions.gnome.org/extension/1176/argos/"><img src="https://img.shields.io/badge/extensions.gnome.org-Argos-9999ff.svg"></a>
+                    </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://github.com/p-e-w/argos">GitHub</a></li>
-                    <li><a href="https://github.com/p-e-w/argos#examples"><strong>FAQ</strong></a></li>
+                    <li><a data-toggle="modal" data-target="#FAQ" href=""><strong>FAQ</strong></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="modal fade" id="asciicinema" tabindex="-1" role="dialog" aria-labelledby="asciicinema">
-        <span type="button" class="close-modal hvr-bounce-in" data-dismiss="modal" aria-label="Close">
-            <small>&times;</small>
-        </span>
-
-        <div id="modal-hero">
-            <img id="hero-logo" src="/images/fisherman-logo.svg" alt="Fisherman"/>
-            <div id="player-container"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="FAQ" tabindex="-1" role="dialog" aria-labelledby="FAQLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#Contribute" aria-controls="Contribute" role="tab" data-toggle="tab">Contribute</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">What is Argos?</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">What is this site?</a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Helpful things.</a></li>
+                </ul>
+                <div class="modal-body">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="Contribute">
+                        <p>Write an awesome script in your favorite Language. Do the fork and merge dance. Be happy</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="profile">2</div>
+                        <div role="tabpanel" class="tab-pane fade" id="messages">3</div>
+                        <div role="tabpanel" class="tab-pane fade" id="settings">
+                        <ul>
+                        <li>Cras justo odio</li>
+                        <li>Dapibus ac facilisis in</li>
+                        <li>Morbi leo risus</li>
+                        <li>Porta ac consectetur ac</li>
+                        <li>Vestibulum at eros</li>
+                        </ul></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-
-        <script>
-            asciinema_player.core.CreatePlayer(
-                'player-container',
-                '/resources/asciicast.json', {
-                width: 92,
-                height: 20,
-                autoPlay: true,
-                fontSize: "medium",
-                loop: true
-            })
-        </script>
     </div>
 
-    <script>
-        $('#asciicinema').on('shown.bs.modal', function () {
-            $('#myInput').focus()
-        })
-
-        $(document).ready(function() {
-            if(location.hash === "#demo" || location.hash === "#show") {
-                $('#asciicinema').modal('show')
-            }
-        })
-    </script>
 <header>
