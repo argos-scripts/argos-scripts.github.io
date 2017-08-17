@@ -109,7 +109,7 @@ var searchQueryString = function() {
 }
 
 $.get(source, function(data) {
-  var plugs = data.split("\n\n")
+  var plugs = data.trim().split("\n\n")
 
     for (var i=0; i<plugs.length; i++) {
       var dat = plugs[i].split("\n")
