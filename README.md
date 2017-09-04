@@ -16,18 +16,6 @@ jekyll serve
 
 [slack-link]: https://fisherman-wharf.herokuapp.com/
 [slack-badge]: https://img.shields.io/badge/slack-join%20the%20chat-00B9FF.svg?style=flat-square
-
-## Logo
-
-You are free to share and adapt the fisherman logo under the terms of the CreativeCommons BY-NC-SA 4.0 license.
-
-<p align="center">
-    <br>
-    <img width="700" src="https://rawgit.com/fisherman/fisherman.github.io/master/fisherman.svg" alt="fisherman">
-    <br>
-    <br>
-</p>
-
 [slack-link]: https://fisherman-wharf.herokuapp.com
 [slack-badge]: https://fisherman-wharf.herokuapp.com/badge.svg
 [fisherman]:    http://github.com/fisherman/fisherman
